@@ -10,7 +10,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 app.all('*', function(req, res) {
-	res.render('index', {msg: 'Welcome to the Practical Node js'})
+	res.render('index', {msg: 'Welcome to Doojinschool'})
 })
 
 http.createServer(app).listen(app.get('port'), function(){
